@@ -1,6 +1,7 @@
 package p01_class;
 
 public class Animal {
+
   /*
 클래스 선언할 경우
 1) 멤버변수와 메서드가 없어도 클래스 선언 가능
