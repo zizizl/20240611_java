@@ -26,5 +26,22 @@ public class Ex05char {
       System.out.println("공백이 같습니다.");
     }
 
+//    특수 문자 반환
+    char c4 = '\'';
+    char c5 = '\"';
+    char c6 = '\\';
+    char c7 = '\b';  //백스페이스
+    char c8 = '\t';  // tab
+    char c9 = '\n';  //개행
+    char c10 = '\r'; //캐리지리턴
+    char c11 = '\f'; //폼피드
+
+
+
+
+    System.out.println(c4);
+    System.out.println(c5);
+    System.out.println(c6);
+
   }
 }
