@@ -21,12 +21,12 @@ public class Ex06int {
     System.out.println(s3);
     int i1 = s1 + s2;
     System.out.println(i1);
+    long l1 = 200l; // long = long
 
 // 3. 표현 범위가 작은 것이 큰 것으로 올 때는 묵시적 형변환
-    long l1 = 200l; // long = long
     long l2 = 200;  // long = int   longl2 = (long)200 이렇게 표현한건데 long이 생략되서 표시됨.
 
-
+    int i2 = (int)l2; // 큰 범위가 작은 범위로 올때는 명시적 선언!
 
   }
 }
