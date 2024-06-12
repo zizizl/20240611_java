@@ -3,8 +3,15 @@ package p02_variable;
 import p01_class.Animal;
 
 public class Ex02types {
-  boolean power;
-  char c1;
+  //변수의 종류 크게: Primitive, Reference
+  // Primitive type( 일반 변수는 실제 값을 가짐 )
+  // Reference type( 참조형 변수, 주소 값을 가짐 )
+
+  // 변수의 할당 = 선언 + 초기화
+  // 멤버변수는 선언만 해도 됨 new 라는 생성연산자를 통해 기본값으로 초기화
+  // 멤버변수가 할당이 된것은 new 에서 제외
+  boolean power = true; // 할당
+  char c1; // 선언
   byte b1;
   short s1;
   int i1;
@@ -15,9 +22,7 @@ public class Ex02types {
   Animal animal;
 
   public static void main(String[] args) {
-    //변수의 종류 크게: Primitive, Reference
-
-    // Primitive type( 일반 변수는 실제 값을 가짐 )
+    // 지역변수는 사용하기 위해서는 반드시 할당을 해야함
     boolean power = true; // 논리형 - true, false 값을 나타냄, 1byte
     char c1 = 'A';        // 문자형 - 2byte, 0~65535, 16비트, 문자 1개 밖에 안들어감 ex)Apple 안됌
     byte b1 = 18;         // 정수형 - 1byte, 8비트, -128~127
@@ -27,26 +32,24 @@ public class Ex02types {
     float f1 = 0.1f;      // 실수형 - 4byte, 32비트, 소수점 7째자리 10^45승~10^38
     double d1 = 0.1d;     // 실수형 - 8byte, 64비트, 소수점 15째자리 10^-324~10^308
 
-    // Reference type( 참조형 변수, 주소 값을 가짐 )
-    String str = "Hello";
+
+    String str = "Hello"; System.out.println(str);
+    Animal animal = new Animal(); System.out.println(animal);
+    System.out.println(c1);
     System.out.println(str);
-    Animal animal = new Animal();
-    System.out.println(animal);
 
-    Ex02types ex02types = new Ex02types();
-    System.out.println(ex02types.power);
-    System.out.println(ex02types.c1);
-    System.out.println(ex02types.b1);
-    System.out.println(ex02types.s1);
-    System.out.println(ex02types.i1);
-    System.out.println(ex02types.l1);
-    System.out.println(ex02types.f1);
-    System.out.println(ex02types.d1);
-    System.out.println(ex02types.str);
-    System.out.println(ex02types.animal);
-
-
-
-
+    System.out.println("===============");
+    // 전역변수를 사용하기 위해서는 클래스 인스턴스를 만들어야함
+    Ex02types ex02types = new Ex02types();  //밑에 값은 기본값을 나타냄
+    System.out.println(ex02types.power);  // false
+    System.out.println(ex02types.c1);     // 공백
+    System.out.println(ex02types.b1);     // 0
+    System.out.println(ex02types.s1);     // 0
+    System.out.println(ex02types.i1);     // 0
+    System.out.println(ex02types.l1);     // 0
+    System.out.println(ex02types.f1);     // 0.0
+    System.out.println(ex02types.d1);     // 0.0
+    System.out.println(ex02types.str);    // null
+    System.out.println(ex02types.animal); // null
   }
 }

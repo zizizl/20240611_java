@@ -28,3 +28,9 @@ public class Animal {
     System.out.println(legs);
   }
 }
+// 하나의 파일에 main 메서드 여러개 가능
+class Foo{
+  public static void main(String[] args) {
+
+  }
+}
