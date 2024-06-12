@@ -27,5 +27,6 @@ public class Ex06int {
     long l2 = 200;  // long = int   longl2 = (long)200 이렇게 표현한건데 long이 생략되서 표시됨.
 
 
+
   }
 }
