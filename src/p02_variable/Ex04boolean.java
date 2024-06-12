@@ -56,10 +56,9 @@ class Tv {
   }
 
   void channelUp() {
-//    channel++; 밑에는 다 같은 값
+//    channel++; 이거 다 같은 값
 //    channel = channel + 1;
 //    channel += 1;
-//    channel++;
     System.out.println(++channel);
   }
 
