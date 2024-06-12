@@ -2,7 +2,7 @@ package p02_variable;
 
 import p01_class.Animal;
 
-public class Ex02types {
+public class Ex02Types {
   //변수의 종류 크게: Primitive, Reference
   // Primitive type( 일반 변수는 실제 값을 가짐 )
   // Reference type( 참조형 변수, 주소 값을 가짐 )
@@ -40,7 +40,7 @@ public class Ex02types {
 
     System.out.println("===============");
     // 전역변수를 사용하기 위해서는 클래스 인스턴스를 만들어야함
-    Ex02types ex02types = new Ex02types();  //밑에 값은 기본값을 나타냄
+    Ex02Types ex02types = new Ex02Types();  //밑에 값은 기본값을 나타냄
     System.out.println(ex02types.power);  // false
     System.out.println(ex02types.c1);     // 공백
     System.out.println(ex02types.b1);     // 0
