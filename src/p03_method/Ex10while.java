@@ -36,8 +36,10 @@ public class Ex10while {
 //      i++;
 //    }
 
-    System.out.println("=======내 마음의 숫자를 맞추기 게임=======");
-    int random = (int)(Math.random()*100)+1;
+
+  /* 숫자게임 쉬운 버전
+  System.out.println("=======내 마음의 숫자를 맞추기 게임=======");
+    int random = (int) (Math.random() * 100) + 1;
     while (true) {
       int answer = Integer.parseInt(JOptionPane.showInputDialog("숫자를 입력하세요"));
       if (answer > random) {
@@ -48,8 +50,10 @@ public class Ex10while {
         System.out.println("@@@정답입니다!!@@@");
         break;
       }
-    }
-/*    System.out.println("=======내 마음의 숫자를 맞추기 게임=======");
+    }*/
+
+/*  숫자게임 어려운 버전
+    System.out.println("=======내 마음의 숫자를 맞추기 게임=======");
     boolean stop = false;
     while (true) {
       int random = (int) (Math.random() * 100) + 1;
@@ -71,7 +75,20 @@ public class Ex10while {
           }
         }
       }*/
-    }
+
+    do {
+//      int you =
+      String input = JOptionPane.showInputDialog("가위(0),바위(1),보(2)중에 입력하세요");
+      int me;
+      try {
+        me = Integer.parseInt(input);
+      } catch (Exception e) {
+        continue;
+      }
+    } while (true);
+
+
   }
+}
 
 
