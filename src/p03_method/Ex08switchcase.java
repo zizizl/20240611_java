@@ -62,6 +62,5 @@ public class Ex08switchcase {
         System.out.println("Kang");
         break;
     }
-
   }
 }
