@@ -23,10 +23,15 @@ public class Ex06int {
     System.out.println(i1);
     long l1 = 200l; // long = long
 
-// 3. 표현 범위가 작은 것이 큰 것으로 올 때는 묵시적 형변환
-    long l2 = 200;  // long = int   longl2 = (long)200 이렇게 표현한건데 long이 생략되서 표시됨.
+    // 3. 표현범위가 작은것이 큰것으로 올 때는 묵시적 형변환!
+    long l2 = 200;  // long=int,long l2=(long)200
 
-    int i2 = (int) l2; // 큰 범위가 작은 범위로 올때는 명시적 선언!
+    int i2 = (int) l2; //큰범위가 작은 범위로 올때는 명시적 선언!
+    long result = i2 + l1; //long과 연산할 때 long 으로 형변환!
+    Utils.typeOf(result);
+
+    int i3 = b1; // int = byte :: 묵시적 형변환(int 표현범위큼)
+    byte b5 = (byte) i3; // byte = int :: 명시적 형변환
 
   }
 }
