@@ -76,17 +76,6 @@ public class Ex10while {
         }
       }*/
 
-    do {
-//      int you =
-      String input = JOptionPane.showInputDialog("가위(0),바위(1),보(2)중에 입력하세요");
-      int me;
-      try {
-        me = Integer.parseInt(input);
-      } catch (Exception e) {
-        continue;
-      }
-    } while (true);
-
 
   }
 }

@@ -13,6 +13,9 @@ public class Ex09For {
     sum = sum + 3;
     sum = 0;
     for (int i = 9; i <= 0; --i) sum = sum + i;
+    for (int i = 0; i < 10; i++) {
+      sum += i;
+    }
 
     System.out.println(sum);
 // 구구단 2단 만들기
