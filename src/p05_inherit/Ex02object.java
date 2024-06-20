@@ -13,7 +13,8 @@ public class Ex02object {
   }
 }
 
-// 모든 클래스는 object를 상속받음
+// 모든 클래스는 object를 상속받음 extend object 안써도됌
+
 class Member {
   String name, mobile;
 
