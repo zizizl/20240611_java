@@ -24,17 +24,17 @@ public class Ex10while {
 
 
 // while문 9단까지 출력
-//    int i = 2;
-//    int j = 1;
-//    while (i < 10) {
-//      while (j < 10) {
-//        System.out.println(i + " * " + j + " = " + (i * j));
-//        j++;
-//      }
-//      System.out.println();
-//      j = 1;
-//      i++;
-//    }
+    int i = 2;
+    int j = 1;
+    while (i < 10) {
+      while (j < 10) {
+        System.out.println(i + " * " + j + " = " + (i * j));
+        j++;
+      }
+      System.out.println();
+      j = 1;
+      i++;
+    }
 
 
   /* 숫자게임 쉬운 버전
