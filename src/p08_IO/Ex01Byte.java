@@ -30,11 +30,17 @@ public class Ex01Byte {
     while (input.available() > 0) {
       try {
         int length = input.read(tmp); // input을 읽어서 tmp에 담음, read가 읽은 글자수를 반환
-        output.write(tmp);
+        // output.write(tmp);
+        output.write(tmp, 0, length);
+        outSrc = output.toByteArray();
+        System.out.println("tmp : " + Arrays.toString(tmp));
+        System.out.println("Outsrc : " + Arrays.toString(outSrc));
       } catch (IOException e) {
         throw new RuntimeException(e);
       }
-
     }
+
+
+
   }
 }
