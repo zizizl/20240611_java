@@ -2,16 +2,12 @@ package p07_Collection;
 
 import java.util.*;
 
-public class Ec05Set {
+public class Ex05Set {
   public static void main(String[] args) {
     Set<Integer> set = new HashSet();
-    set.add(4);
-    set.add(4);
-    set.add(2);
-    set.add(3);
+    set.add(4);set.add(4);set.add(2);set.add(3);
     System.out.println(set);
-    set.add(1);
-    set.remove(4);
+    set.add(1);set.remove(4);
     System.out.println(set);
     for (int i : set) System.out.println(i);
     Iterator it = set.iterator();
@@ -19,16 +15,16 @@ public class Ec05Set {
 
     Set<Integer> lotto = new HashSet<>();
     while (lotto.size() < 6) {
-      lotto.add((int)(Math.random() * 45) + 1);
+      lotto.add((int) (Math.random() * 45) + 1);
     }
-    System.out.println(lotto);
+    ArrayList list = new ArrayList(lotto);
+    Collections.sort(list);
+    System.out.println(list);
 
     Set<Integer> lotto2 = new TreeSet<>();
     while (lotto2.size() < 6) {
-      lotto2.add((int) (Math.random()* 45 +1));
+      lotto2.add((int) (Math.random() * 45) + 1);
     }
     System.out.println(lotto2);
-
-
   }
 }
