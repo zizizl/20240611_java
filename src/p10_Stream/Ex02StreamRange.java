@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
-public class Ex04StreamRange {
+public class Ex02StreamRange {
   public static void main(String[] args) {
     IntStream intStream = new Random().ints(1, 5);
     intStream.limit(5).forEach(new IntConsumer() {
