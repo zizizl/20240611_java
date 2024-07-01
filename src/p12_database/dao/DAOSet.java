@@ -3,12 +3,12 @@ package p12_database.dao;
 import java.sql.*;
 
 public class DAOSet {
-  private Connection conn;
-  private PreparedStatement pstmt;
-  private Statement stmt;
-  private ResultSet rs;
+  protected Connection conn;
+  protected PreparedStatement pstmt;
+  protected Statement stmt;
+  protected ResultSet rs;
 
-  public Connection ConnectDB() throws SQLException {
+  public Connection connectDB() throws SQLException {
     String driver = "jdbc:oracle:thin:@localhost:1521:xe"; // 오라클
     String user = "db7", pass = "1234";
     conn = DriverManager.getConnection(driver, user, pass);
@@ -26,5 +26,14 @@ public class DAOSet {
       throw new RuntimeException(e);
     }
   }
+  /*
+   create table members(
+        mno number,
+        id varchar2(20),
+        pass varchar2(20),
+        name varchar2(20),
+        mobile varchar2(20));
+  */
+
 }
 

@@ -8,7 +8,7 @@ public class DAOSetTest {
     DAOSet daoSet = new DAOSet();
     try {
       Class.forName("oracle.jdbc.driver.OracleDriver");
-      Connection conn = daoSet.ConnectDB();
+      Connection conn = daoSet.connectDB();
       System.out.println(conn.isClosed() ? "접속종료" : "접속중");
     } catch (ClassNotFoundException e) {
       System.out.println("드라이버로딩 오류 : " + e.getMessage());
