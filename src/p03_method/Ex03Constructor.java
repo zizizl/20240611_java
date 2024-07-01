@@ -17,19 +17,38 @@ class Car {
   public Car() {
     this("GV80", "white", "hd");
   }
+
   public Car(String mod, String color, String maker) {
-    model = mod;this.color = color;this.maker = maker;
+    model = mod;
+    this.color = color;
+    this.maker = maker;
   }
+
   private String model;
   private String color;
   private String maker;
 
-  public String getModel() {return model;}
-  public void setModel(String model) {this.model = model;}
-  public String getColor() {return color;}
+  public String getModel() {
+    return model;
+  }
+
+  public void setModel(String model) {
+    this.model = model;
+  }
+
+  public String getColor() {
+    return color;
+  }
+
   public void setColor(String color) {
     this.color = color;
   }
-  public String getMaker() {return maker;}
-  public void setMaker(String maker) {this.maker = maker;}
+
+  public String getMaker() {
+    return maker;
+  }
+
+  public void setMaker(String maker) {
+    this.maker = maker;
+  }
 }

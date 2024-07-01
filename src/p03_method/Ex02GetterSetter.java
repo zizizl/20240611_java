@@ -10,7 +10,6 @@ public class Ex02GetterSetter {
 //    p1.pass = "1234";
 //    p1.pass = "1111";
     System.out.println(p1.getName());
-
   }
 }
 
@@ -20,6 +19,7 @@ class Person {
   private String id;
   private String pass;
   private String mobile;
+
   public String getName() {
     return name;
   }
