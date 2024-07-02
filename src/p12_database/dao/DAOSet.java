@@ -33,6 +33,10 @@ public class DAOSet {
         pass varchar2(20),
         name varchar2(20),
         mobile varchar2(20));
+
+        create sequence sq_members;
+
+        grant UNLIMITED TABLESPACE to db7;
   */
 
 }
